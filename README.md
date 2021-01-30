@@ -1,2 +1,2 @@
 # First portfolio
-## A landing page from my development profile growing
+## A landing page from my developer profile growup
