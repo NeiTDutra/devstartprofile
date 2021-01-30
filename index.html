@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+        crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+        crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+        crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/fcd3489b95.js" 
+        crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+    <!--barra superior-->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#sobremim">Nei Thomassin Dutra</a>
+            <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" 
+                aria-expanded="false" 
+                aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobremim">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <!--entre sessões-->
+
+    <div class="separate">
+        <img src="./images/circuito1.png" alt="">
+    </div>
+
+    <!--capa do site-->
+
+    <section class="jumbotron text-center bg-pr mt-0 mb-0 h75">
+        <div class="container text-light">
+            <img class="capa" src="./images/capa.jpg" alt="Minha foto">
+            <h1 class="jumbotron-heading">Nei Thomassin Dutra</h1>
+            <p class="lead">Analista e desenvolvedor de sistemas | Desenvolvedor freelance | Tecnologias web</p>
+            <p>
+                <a href="#contato" class="btn btn-outline-primary my-2">Contato</a>
+            </p>
+            <a href="http://linkedin/neithomassindutra" 
+                title="http://linkedin/neithomassindutra"
+                target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/NeiTDutra" 
+                title="https://github.com/NeiTDutra"
+                target="_blank">
+                <i class="fab fa-github ml-3"></i>
+            </a>
+            <a href="https://gitlab.com/neithomass" 
+                title="https://gitlab.com/neithomass"
+                target="_blank">
+                <i class="fab fa-gitlab ml-3"></i>
+            </a>
+        </div>
+    </section>
+
+    <!--entre sessões-->
+
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6" id="projetos">
+            <img class="img-ml" src="./images/circuito2.png" alt="">
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+
+    <!--cards de projetos-->
+
+    <section>
+        <div class="album bg-white h80">
+            <div class="container">
+                <h2 class="jumbotron-heading text-center titulo mb-5">
+                    Projetos
+                </h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm bg-dark text-white">
+                            <img class="card-img-top p-2" src="./images/nservicosorcamentos.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Gerenciador de orçamentos</h5>
+                                <p class="card-text">
+                                    Sistema gerenciador de orçamentos para serviços e produtos.
+                                </p>
+                                <ul>
+                                    <li>Nodejs</li>
+                                    <li>MongoDB</li>
+                                    <li>libs</li>
+                                    <ul>
+                                        <li>Expressjs</li>
+                                        <li>Passportjs</li>
+                                    </ul>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="http://orcamentosservice-com-br.umbler.net/" target="_blank">
+                                            <button type="button" class="btn btn-sm btn-success">Vizitar site</button>
+                                        </a>
+                                        <a href="https://github.com/NeiTDutra/orcamento-service" target="_blank">
+                                            <button type="button" class="btn btn-sm btn-primary ml-2">Git do projeto</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm bg-dark text-white">
+                            <img class="card-img-top p-2" src="./images/nservicosorcamentos.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Gerenciador de orçamentos</h5>
+                                <p class="card-text">
+                                    Sistema gerenciador de orçamentos para serviços e produtos.
+                                </p>
+                                <ul>
+                                    <li>Nodejs</li>
+                                    <li>MongoDB</li>
+                                    <li>libs</li>
+                                    <ul>
+                                        <li>Expressjs</li>
+                                        <li>Passportjs</li>
+                                    </ul>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="http://orcamentosservice-com-br.umbler.net/" target="_blank">
+                                            <button type="button" class="btn btn-sm btn-success">Vizitar site</button>
+                                        </a>
+                                        <a href="https://github.com/NeiTDutra/orcamento-service" target="_blank">
+                                            <button type="button" class="btn btn-sm btn-primary ml-2">Git do projeto</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm bg-dark text-white">
+                            <img class="card-img-top p-2" src="./images/nservicosorcamentos.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Gerenciador de orçamentos</h5>
+                                <p class="card-text">
+                                    Sistema gerenciador de orçamentos para serviços e produtos.
+                                </p>
+                                <ul>
+                                    <li>Nodejs</li>
+                                    <li>MongoDB</li>
+                                    <li>libs</li>
+                                    <ul>
+                                        <li>Expressjs</li>
+                                        <li>Passportjs</li>
+                                    </ul>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="http://orcamentosservice-com-br.umbler.net/" target="_blank">
+                                            <button type="button" class="btn btn-sm btn-success">Vizitar site</button>
+                                        </a>
+                                        <a href="https://github.com/NeiTDutra/orcamento-service" target="_blank">
+                                            <button type="button" class="btn btn-sm btn-primary ml-2">Git do projeto</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--entre sessões-->
+
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6" id="sobremim">
+            <img class="img-ml" src="./images/circuito3.png" alt="">
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+
+    <!--descrição pessoal-->
+
+    <section class="jumbotron text-center bg-pr mb-0 text-light h80">
+        <div class="container">
+            <h2 class="jumbotron-heading titulo-b mb-5">
+                Sobre mim
+            </h2>
+            <p class="lead">
+                Pequena descrição sobre minha atuação em desenvolvimento de sistemas.
+            </p>
+        </div>
+    </section>
+
+    <!--entre sessões-->
+
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6" id="depoimentos">
+            <img class="img-ml" src="./images/circuito4.png" alt="">
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+
+    <!--depoimentos de apoiadores-->
+
+    <section class="jumbotron text-center mb-0 h80">
+        <div class="container">
+            <h2 class="jumbotron-heading titulo pb-5">
+                Depoimentos
+            </h2>
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!--entre sessões-->
+
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6" id="contato">
+            <img class="img-ml" src="./images/circuito5.png" alt="">
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+
+    <!--contato-->
+
+    <section class="bg-pr h80">
+        <div>
+            <div class="container-fluid pb-5">
+                <h3 class="text-center titulo-b pt-5 pb-5">Disponível para oportunidades</h3>
+                <a href="mailto:nei.thomass@gmail.com">
+                    <h4 class="text-center text-white">nei.thomass@gmail.com</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--rodapé-->
+
+    <footer class="text-center bg-dark text-white pt-3 pb-3">
+        <p>
+            Created at 2021 - <span class="text-primary">N</span> Serviços
+        </p>
+    </footer>
+</body>
+
+</html>

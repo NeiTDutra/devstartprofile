@@ -1,0 +1,43 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.capa {
+    border-radius: 50%;
+    width: 25%;
+}
+.bg-pr {
+    background-color: #2F4F4F !important;
+} 
+.bg-sec {
+    background-color: #ADD8E6 !important;
+}
+.separate {
+    width: 100%;
+}
+.separate img {
+    width: 50%;
+}
+.img-ml {
+    width: 100%;
+}
+.titulo {
+    text-decoration: underline;
+    text-underline-position: below;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2F4F4F;
+}
+.titulo-b {
+    text-decoration: underline;
+    text-underline-position: below;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+.h80 {
+    height: 80vh;
+}
+.h75 {
+    height: 75vh;
+}
