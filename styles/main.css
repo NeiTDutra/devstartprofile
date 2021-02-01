@@ -36,8 +36,31 @@ html {
     color: white;
 }
 .h80 {
-    height: 80vh;
+    min-height: 80vh;
 }
 .h75 {
-    height: 75vh;
+    min-height: 75vh;
+}
+.fixed-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.top4 {
+    padding-top: 4%;
+}
+.pngcontato {
+    width: 3%;
+}
+.teclist {
+    list-style-type: none;
+}
+.teclist li {
+    margin-bottom: 5%;
+}
+.teclist img {
+    margin-right: 5%;
+}
+.logolist {
+    width: 10%;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Nei Thomassin Dutra Portfolio</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
@@ -30,9 +30,9 @@
 
     <!--barra superior-->
 
-    <header>
+    <header class="fixed-nav">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#sobremim">Nei Thomassin Dutra</a>
+            <a class="navbar-brand" href="#home">Nei Thomassin Dutra</a>
             <button class="navbar-toggler" 
                 type="button" 
                 data-toggle="collapse" 
@@ -54,7 +54,7 @@
                         <a class="nav-link" href="#sobremim">Sobre mim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                        <a class="nav-link" href="#tecnologias">Tecnologias</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contato">Contato</a>
@@ -67,7 +67,7 @@
 
     <!--entre sessões-->
 
-    <div class="separate">
+    <div class="separate top4" id="home">
         <img src="./images/circuito1.png" alt="">
     </div>
 
@@ -114,9 +114,10 @@
     <section>
         <div class="album bg-white h80">
             <div class="container">
-                <h2 class="jumbotron-heading text-center titulo mb-5">
+                <h2 class="jumbotron-heading text-center titulo">
                     Projetos
                 </h2>
+                <p class="text-center lead">Todos projetos são pessoais, nenhum usado em produção ou profissionalmente.</p>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card shadow-sm bg-dark text-white">
@@ -126,15 +127,15 @@
                                 <p class="card-text">
                                     Sistema gerenciador de orçamentos para serviços e produtos.
                                 </p>
-                                <ul>
-                                    <li>Nodejs</li>
-                                    <li>MongoDB</li>
-                                    <li>libs</li>
-                                    <ul>
-                                        <li>Expressjs</li>
-                                        <li>Passportjs</li>
-                                    </ul>
-                                </ul>
+                                <p>
+                                    javascript | HTML | CSS
+                                </p>
+                                <p>
+                                    Node.js | MongoDB | Bootstrap
+                                </p>
+                                <p>
+                                    Express.js | Mongoose.js | Passport.js
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <a href="http://orcamentosservice-com-br.umbler.net/" target="_blank">
@@ -150,27 +151,24 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card shadow-sm bg-dark text-white">
-                            <img class="card-img-top p-2" src="./images/nservicosorcamentos.png" alt="Card image cap">
+                            <img class="card-img-top p-2" src="./images/gestãodeclientes.png" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Gerenciador de orçamentos</h5>
+                                <h5 class="card-title">Cadastro de clientes</h5>
                                 <p class="card-text">
-                                    Sistema gerenciador de orçamentos para serviços e produtos.
+                                    Sistema gerenciador de clientes para guardar e gerenciar lista de clientes.
                                 </p>
-                                <ul>
-                                    <li>Nodejs</li>
-                                    <li>MongoDB</li>
-                                    <li>libs</li>
-                                    <ul>
-                                        <li>Expressjs</li>
-                                        <li>Passportjs</li>
-                                    </ul>
-                                </ul>
+                                <p>
+                                    Python | HTML | CSS
+                                </p>
+                                <p>
+                                    Django.py | PostgreeSQL | Heroku
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="http://orcamentosservice-com-br.umbler.net/" target="_blank">
+                                        <a href="https://crmmngcli.herokuapp.com/login/" target="_blank">
                                             <button type="button" class="btn btn-sm btn-success">Vizitar site</button>
                                         </a>
-                                        <a href="https://github.com/NeiTDutra/orcamento-service" target="_blank">
+                                        <a href="https://github.com/NeiTDutra/django_costumer_manager" target="_blank">
                                             <button type="button" class="btn btn-sm btn-primary ml-2">Git do projeto</button>
                                         </a>
                                     </div>
@@ -180,27 +178,24 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card shadow-sm bg-dark text-white">
-                            <img class="card-img-top p-2" src="./images/nservicosorcamentos.png" alt="Card image cap">
+                            <img class="card-img-top p-2" src="./images/pjcelo.png" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Gerenciador de orçamentos</h5>
+                                <h5 class="card-title">Gerenciador de orçamentos, clientes e estoque</h5>
                                 <p class="card-text">
-                                    Sistema gerenciador de orçamentos para serviços e produtos.
+                                    Sistema gerenciador de orçamentos para serviços e produtos, clientes e controle de estoque.
                                 </p>
-                                <ul>
-                                    <li>Nodejs</li>
-                                    <li>MongoDB</li>
-                                    <li>libs</li>
-                                    <ul>
-                                        <li>Expressjs</li>
-                                        <li>Passportjs</li>
-                                    </ul>
-                                </ul>
+                                <p>
+                                    PHP | MySQL | HTML | CSS
+                                </p>
+                                <p>
+                                    Dompdf | PHPMailer
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="http://orcamentosservice-com-br.umbler.net/" target="_blank">
+                                        <a href="https://orcamentosfree.000webhostapp.com/index.php" target="_blank">
                                             <button type="button" class="btn btn-sm btn-success">Vizitar site</button>
                                         </a>
-                                        <a href="https://github.com/NeiTDutra/orcamento-service" target="_blank">
+                                        <a href="https://github.com/NeiTDutra/C.E.L.O." target="_blank">
                                             <button type="button" class="btn btn-sm btn-primary ml-2">Git do projeto</button>
                                         </a>
                                     </div>
@@ -231,7 +226,17 @@
                 Sobre mim
             </h2>
             <p class="lead">
-                Pequena descrição sobre minha atuação em desenvolvimento de sistemas.
+                Formado em análise e desenvolvimento de sistemas em 2021 pela Universidade 
+                Cruzeiro do Sul, e desbravador de novas tecnologias no geral mas, principalmente, 
+                com tendências apontadas para web, desde 2010. Autodidata pelos caminhos das documentações 
+                de linguagens de programação e frameworks, bem como pelas diversas tendências que 
+                envolvem as staks do nicho da web. 
+            </p>
+            <p class="lead">
+                Com vários certificados de cursos livres e através das documentações das diversas 
+                tecnologias, venho me preparando ao longo do tempo dedicado em projetos pessoais, para
+                enfrentar os desafios e aproveitar das oportunidades profissionais, para desenvolver 
+                sempre mais e melhor.
             </p>
         </div>
     </section>
@@ -240,23 +245,53 @@
 
     <div class="row">
         <div class="col-sm-3"></div>
-        <div class="col-sm-6" id="depoimentos">
+        <div class="col-sm-6" id="tecnologias">
             <img class="img-ml" src="./images/circuito4.png" alt="">
         </div>
         <div class="col-sm-3"></div>
     </div>
 
-    <!--depoimentos de apoiadores-->
+    <!--tecnologias assistidas-->
 
     <section class="jumbotron text-center mb-0 h80">
         <div class="container">
             <h2 class="jumbotron-heading titulo pb-5">
-                Depoimentos
+                Algumas tecnologias assistidas
             </h2>
-            <blockquote class="blockquote text-center">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-            </blockquote>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Linguagens:</h3>
+                    <ul class="teclist">
+                        <li><img class="logolist" src="./images/html.png">HTML</li>
+                        <li><img class="logolist" src="./images/css.jpeg">CSS</li>
+                        <li><img class="logolist" src="./images/js.jpeg">JAVASCRIPT</li>
+                        <li><img class="logolist" src="./images/php.png">PHP</li>
+                        <li><img class="logolist" src="./images/python.png">PYTHON</li>
+                        <li><img class="logolist" src="./images/sql.jpeg">SQL</li>
+                        <li><img class="logolist" src="./images/nosql.png">NOSQL</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Frameworks:</h3>
+                    <ul class="teclist">
+                        <li><img class="logolist" src="./images/node.png">NODE.JS</li>
+                        <li><img class="logolist" src="./images/angular.png">ANGULAR.JS</li>
+                        <li><img class="logolist" src="./images/react.png">REACT.JS</li>
+                        <li><img class="logolist" src="./images/django.jpeg">DJANGO.PY</li>
+                        <li><img class="logolist" src="./images/flask.png">FLASK.PY</li>
+                        <li><img class="logolist" src="./images/bootstrap.png">BOOTSTRAP</li>
+                        <li><img class="logolist" src="./images/jquery.jpeg">JQUERY</li>
+                    </ul>
+                </div><div class="col-sm-4">
+                    <h3>Databases:</h3>
+                    <ul class="teclist">
+                        <li><img class="logolist" src="./images/mysql.png">MYSQL</li>
+                        <li><img class="logolist" src="./images/mongodb.png">MONGODB</li>
+                        <li><img class="logolist" src="./images/postgre.png">POSTGRESQL</li>
+                        <li><img class="logolist" src="./images/sqlite.png">SQLITE</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -274,10 +309,18 @@
 
     <section class="bg-pr h80">
         <div>
-            <div class="container-fluid pb-5">
+            <div class="container-fluid pb-5 text-center">
                 <h3 class="text-center titulo-b pt-5 pb-5">Disponível para oportunidades</h3>
-                <a href="mailto:nei.thomass@gmail.com">
+                <a href="mailto:nei.thomass@gmail.com" 
+                    target="_blank">
+                    <img class="pngcontato" src="./images/mail.png" alt="email">
                     <h4 class="text-center text-white">nei.thomass@gmail.com</h4>
+                </a>
+                <br>
+                <a href="https://api.whatsapp.com/send?phone=5551992537360&text=Olá%20Nei"
+                    target="_blank">
+                    <img class="pngcontato" src="./images/whats.png" alt="whatsapp">
+                    <h4 class="text-center text-white">(51) 99253 7360</h4>
                 </a>
             </div>
         </div>
@@ -287,7 +330,7 @@
 
     <footer class="text-center bg-dark text-white pt-3 pb-3">
         <p>
-            Created at 2021 - <span class="text-primary">N</span> Serviços
+            Created at 2021 - <a href="http://sites.google.com/view/nservicos" class="text-white" target="_blank"><span class="text-primary">N</span> Serviços</a> 
         </p>
     </footer>
 </body>
