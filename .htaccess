@@ -1,1 +1,9 @@
-curl --user umbler:testehospedagem https://neiportfolio-com.umbler.net/
+AuthType Basic
+AuthName "Access to the staging site"
+AuthBasicProvider file
+AuthUserFile ./keys/.htpasswd
+Require valid-user
+Order Deny,Allow
+Satisfy any
+Deny from all
+Allow from env=!auth
