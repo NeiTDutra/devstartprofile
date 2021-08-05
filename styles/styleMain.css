@@ -2,6 +2,12 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+#projetos {
+    font-family: 'Courier', 'monospace' ;
+}
+#sobre-min {
+    font-family: 'Comic Sans MS', 'Comic Sans', 'cursive';
+}
 .capa {
     border-radius: 50%;
     width: 25%;
@@ -54,6 +60,7 @@ html {
 }
 .teclist {
     list-style-type: none;
+    margin-left: 4vw;
 }
 .teclist li {
     margin-bottom: 5%;
@@ -63,6 +70,10 @@ html {
 }
 .logolist {
     width: 10%;
+}
+
+.shadow-card {
+    box-shadow: 5px 10px 8px 10px #888888;
 }
 
 #foto {
