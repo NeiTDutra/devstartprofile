@@ -71,9 +71,25 @@ html {
 .logolist {
     width: 10%;
 }
+.opacity-1 {
+    opacity: 0.2 !important;
+}
+.opacity-2 {
+    opacity: 0.4 !important;
+}
+.opacity-3 {
+    opacity: 0.6 !important;
+}
+.opacity-4 {
+    opacity: 0.8 !important;
+}
 
 .shadow-card {
-    box-shadow: 5px 10px 8px 10px #888888;
+    box-shadow: 5px 5px 10px 10px #4f6bb99a;
+}
+
+.rotate {
+    transform: rotatex(20deg);
 }
 
 #foto {

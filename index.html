@@ -42,19 +42,13 @@
     <script src="https://kit.fontawesome.com/fcd3489b95.js" 
         crossorigin="anonymous">
     </script>
-<!--
-    <script type="text/javascript" 
-        src="https://platform.linkedin.com/badges/js/profile.js" 
-        async defer>
-    </script>
--->
 </head>
 
 <body>
 
     <!--barra superior-->
 
-    <header class="fixed-nav">
+    <header class="fixed-nav opacity-4">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#home">Nei Thomassin Dutra</a>
             <button class="navbar-toggler" 
@@ -128,7 +122,7 @@
 
     <div class="row">
         <div class="col-sm-3"></div>
-        <div class="col-sm-6" id="projetos">
+        <div class="col-sm-6">
             <img class="img-ml" src="./images/circuito2.png" alt="">
         </div>
         <div class="col-sm-3"></div>
@@ -137,9 +131,9 @@
     <!--cards de projetos-->
 
     <section id="projetos">
-        <div class="bg-sec h80">
+        <div class="jumbotron h80">
             <div class="container">
-                <h2 class="jumbotron-heading text-center titulo">
+                <h2 class="text-center titulo">
                     Projetos
                 </h2>
                 <p class="text-center lead mb-1">
@@ -147,11 +141,10 @@
                 </p>
                 <p class="text-center">
                     No arquivo README.md de cada projeto no github, está um nome e uma senha para 
-                    acessar e testar, e depois me retornar um 
-                <a href="mailto:nei.thomass@gmail.com">feedback</a>.
+                    acessar e testar.
                 </p>
                 <div class="row pb-3">
-                    <div class="col col-lg-4 mb-2">
+                    <div class="col col-lg-4 mb-5">
                         <div class="card text-white shadow-card">
                             <h5 class="card-title bg-dark text-center pt-2">Gerenciador de orçamentos</h5>
                             <img class="card-img-top p-2" src="./images/nservicosorcamentos.png" alt="Card image cap">
@@ -175,7 +168,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-lg-4 mb-2">
+                    <div class="col col-lg-4 mb-5">
                         <div class="card text-white shadow-card">
                             <h5 class="card-title bg-dark text-center pt-2">Cadastro de clientes</h5>
                             <img class="card-img-top p-2" src="./images/gestãodeclientes.png" alt="Card image cap">
@@ -199,7 +192,31 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-lg-4 mb-2">
+                    <div class="col col-lg-4 mb-5">
+                        <div class="card text-white shadow-card">
+                            <h5 class="card-title bg-dark text-center pt-2">Rede social de mensagens</h5>
+                            <img class="card-img-top p-2" src="./images/rede-social.png" alt="Card image cap">
+                            <div class="card-body bg-dark">
+                                <p class="card-text">
+                                    Rede social com perfil e postagem de mensagens. Pesquisar e seguir perfis.
+                                </p>
+                                <p>
+                                    [ Ruby, Rails, Bootstrap, Yarn, SQLite(dev), PostgreSQL, Heroku ]
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="https://socialnetweb.herokuapp.com/users/sign_in" target="_blank">
+                                            <button type="button" class="btn btn-sm btn-success">Vizitar site</button>
+                                        </a>
+                                        <a href="https://github.com/NeiTDutra/dio-social-network-ruby" target="_blank">
+                                            <button type="button" class="btn btn-sm btn-primary ml-2">Git do projeto</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 mb-5">
                         <div class="card text-white shadow-card">
                             <h5 class="card-title bg-dark text-center pt-2">Gerenciador de orçamentos, clientes e estoque</h5>
                             <img class="card-img-top p-2" src="./images/pjcelo.png" alt="Card image cap">
@@ -369,6 +386,24 @@
                 
         </p>
     </footer>
+<!--
+    <script type="text/javascript">
+        window.onload = navMark();
+        function navMark() {
+        // this will get the full URL at the address bar
+        var url = window.location.href;
+        var tag = document.getElementsByClassName("nav-link");
+        console.log(url);
+        console.log(tag.href);
+            // checks if its the same on the address bar
+            if (url == (tag.href)) {
+                tag.addClass("active-page");
+                //for making parent of submenu active
+               //$(this).closest("li").parent().parent().addClass("active");
+            }
+        }   
+    </script>
+-->
 </body>
 
 </html>
