@@ -87,6 +87,10 @@ html {
     opacity: 0.9 !important;
 }
 
+.link-black {
+    color: black;
+}
+
 .shadow-card {
     box-shadow: 8px 10px 15px #4f6bb99a;
 }
