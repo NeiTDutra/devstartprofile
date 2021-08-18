@@ -83,6 +83,9 @@ html {
 .opacity-4 {
     opacity: 0.8 !important;
 }
+.opacity-5 {
+    opacity: 0.9 !important;
+}
 
 .shadow-card {
     box-shadow: 8px 10px 15px #4f6bb99a;
