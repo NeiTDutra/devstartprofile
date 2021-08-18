@@ -2,7 +2,10 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-#projetos {
+.bg-black {
+    background-color: black;
+}
+#p-carousel {
     font-family: 'Courier', 'monospace' ;
 }
 #sobre-min {
@@ -46,6 +49,9 @@ html {
 }
 .h75 {
     min-height: 75vh;
+}
+.h70 {
+    min-height: 70vh;
 }
 .fixed-nav {
     position: fixed;

@@ -21,6 +21,9 @@
         type="text/css" 
         href="./styles/styleMain.css">
     <link rel="stylesheet"
+        type="text/css" 
+        href="./styles/carousel.css">
+    <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
         crossorigin="anonymous">
@@ -89,7 +92,7 @@
 
     <!--entre sessões-->
 
-    <div class="separate top4" id="home">
+    <div class="separate top4 bg-black" id="home">
         <img src="./images/circuito1.png" alt="">
     </div>
 
@@ -101,7 +104,7 @@
             <h1 class="jumbotron-heading">Nei Thomassin Dutra</h1>
             <p class="lead">Analista e desenvolvedor de sistemas | Desenvolvedor freelance | Tecnologias web</p>
             <p>
-                <a href="#contato" class="btn btn-outline-primary my-2">Contato</a>
+                <a href="#contato" class="btn btn-outline-light my-2">Contato</a>
             </p>
             <a href="https://www.linkedin.com/in/neithomassindutra/" 
                 title="https://www.linkedin.com/in/neithomassindutra/"
@@ -122,7 +125,7 @@
                 <span class="h1">&#127959;</span>
                 <i>
                     Este portfólio está em desenvolvimento contínuo. 
-                    <a href="#projetos"> Com novos projetos sendo adicionados a lista regularmente.</a>
+                    <a href="#projetos" class="link-black"> Com novos projetos sendo adicionados a lista regularmente.</a>
                 </i>
                 <span class="h3">&#128679;</span>
             </p>
@@ -131,9 +134,9 @@
 
     <!--entre sessões-->
 
-    <div class="row">
+    <div class="row bg-black">
         <div class="col-sm-3"></div>
-        <div class="col-sm-6">
+        <div class="col-sm-6" id="projetos">
             <img class="img-ml" src="./images/circuito2.png" alt="">
         </div>
         <div class="col-sm-3"></div>
@@ -141,8 +144,179 @@
 
     <!--cards de projetos-->
 
+    <section id="p-carousel">
+        <class class="container text-center my-3">
+            <p class="text-center m-0 p-0">
+                <strong class="text-center titulo m-0 p-0">
+                    Projetos
+                </strong>
+                Todos projetos são pessoais, nenhum usado em produção ou profissionalmente.
+            </p>
+            <p class="text-center m-0 p-0">
+                No arquivo README.md de cada projeto no github, está um nome e uma senha para 
+                acessar e testar.
+            </p>
+            <div class="row mx-auto my-auto w-75">
+                <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                    <div class="carousel-inner w-100 pb-3 pt-1" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-4">
+                                <div class="card text-white shadow-card h70">
+                                    <h5 class="card-title bg-dark text-center pt-2">Gerenciador de orçamentos</h5>
+                                    <a href="https://norcamentos.herokuapp.com/" target="_blank">
+                                        <img class="card-img-top p-2" src="./images/nservicosorcamentos.png" alt="Card image cap">
+                                    </a>
+                                    <div class="card-body bg-dark">
+                                        <p class="card-text">
+                                            Sistema gerenciador de orçamentos para serviços e produtos.
+                                        </p>
+                                        <p class="card-text">
+                                            [ javascript, HTML, CSS, Node.js, MongoDB, Bootstrap, Express.js, Mongoose.js, Passport.js ]
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a href="https://norcamentos.herokuapp.com/" target="_blank">
+                                                    <button type="button" class="btn btn-sm btn-success">Site</button>
+                                                </a>
+                                                <a href="https://github.com/NeiTDutra/orcamento-service" target="_blank">
+                                                    <button type="button" class="btn btn-sm btn-primary ml-2">Github</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card text-white shadow-card h70">
+                                    <h5 class="card-title bg-dark text-center pt-2">Cadastro de clientes</h5>
+                                    <a href="https://crmmngcli.herokuapp.com/login/" target="_blank">
+                                        <img class="card-img-top p-2" src="./images/gestãodeclientes.png" alt="Card image cap">
+                                    </a>
+                                    <div class="card-body bg-dark">
+                                        <p class="card-text">
+                                            Sistema gerenciador de clientes para guardar e gerenciar lista de clientes.
+                                        </p>
+                                        <p class="card-text">
+                                            [ Python, HTML, CSS, Django.py, PostgreeSQL, Heroku ]
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a href="https://crmmngcli.herokuapp.com/login/" target="_blank">
+                                                    <button type="button" class="btn btn-sm btn-success">Site</button>
+                                                </a>
+                                                <a href="https://github.com/NeiTDutra/django_costumer_manager" target="_blank">
+                                                    <button type="button" class="btn btn-sm btn-primary ml-2">Github</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card text-white shadow-card h70">
+                                    <h5 class="card-title bg-dark text-center pt-2">Rede social de mensagens</h5>
+                                    <a href="https://socialnetweb.herokuapp.com/users/sign_in" target="_blank">
+                                        <img class="card-img-top p-2" src="./images/rede-social.png" alt="Card image cap">
+                                    </a>
+                                    <div class="card-body bg-dark">
+                                        <p class="card-text">
+                                            Rede social com perfil e postagem de mensagens. Pesquisar e seguir perfis.
+                                        </p>
+                                        <p class="card-text">
+                                            [ Ruby, Rails, Bootstrap, Yarn, SQLite(dev), PostgreSQL, Heroku ]
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a href="https://socialnetweb.herokuapp.com/users/sign_in" target="_blank">
+                                                    <button type="button" class="btn btn-sm btn-success">Site</button>
+                                                </a>
+                                                <a href="https://github.com/NeiTDutra/dio-social-network-ruby" target="_blank">
+                                                    <button type="button" class="btn btn-sm btn-primary ml-2">Github</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card text-white shadow-card h70">
+                                    <h5 class="card-title bg-dark text-center pt-2">Gerenciador de orçamentos, clientes e estoque</h5>
+                                    <a href="https://orcamentosfree.000webhostapp.com/index.php" target="_blank">
+                                        <img class="card-img-top p-2" src="./images/pjcelo.png" alt="Card image cap">
+                                    </a>
+                                    <div class="card-body bg-dark">
+                                        <p class="card-text">
+                                            Sistema gerenciador de orçamentos para serviços e produtos, clientes e controle de estoque.
+                                        </p>
+                                        <p class="card-text">
+                                            [ PHP, MySQL, HTML, CSS, Dompdf, PHPMailer ]
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a href="https://orcamentosfree.000webhostapp.com/index.php" target="_blank">
+                                                    <button type="button" class="btn btn-sm btn-success">Site</button>
+                                                </a>
+                                                <a href="https://github.com/NeiTDutra/C.E.L.O." target="_blank">
+                                                    <button type="button" class="btn btn-sm btn-primary ml-2">Github</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card text-white shadow-card h70">
+                                    <h5 class="card-title bg-dark text-center pt-2">Site de classificados</h5>
+                                    <a href="https://classificados-ruby.herokuapp.com/" target="_blank">
+                                        <img class="card-img-top p-2" src="./images/web-classificados.png" alt="Card image cap">
+                                    </a>
+                                    <div class="card-body bg-dark">
+                                        <p class="card-text">
+                                            Sistema web para anúncios de classificados. Cadastro e login de usuários. 
+                                            Cria e edita classificados por usuário.
+                                        </p>
+                                        <p class="card-text">
+                                            [ Ruby, Rails, SQLite3, Bootstrap... ]
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a href="https://classificados-ruby.herokuapp.com/" target="_blank">
+                                                    <button type="button" class="btn btn-sm btn-success">Site</button>
+                                                </a>
+                                                <a href="https://github.com/NeiTDutra/web-classificados" target="_blank">
+                                                    <button type="button" class="btn btn-sm btn-primary ml-2">Github</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--
     <section id="projetos">
-        <div class="jumbotron h80">
+        <div class="jumbotron h80 pb-0 mb-0">
+            
             <div class="container">
                 <h2 class="text-center titulo">
                     Projetos
@@ -290,10 +464,11 @@
             </div>
         </div>
     </section>
+-->
 
     <!--entre sessões-->
 
-    <div class="row">
+    <div class="row bg-black">
         <div class="col-sm-3"></div>
         <div class="col-sm-6" id="sobremim">
             <img class="img-ml" src="./images/circuito3.png" alt="">
@@ -331,7 +506,7 @@
 
     <!--entre sessões-->
 
-    <div class="row">
+    <div class="row bg-black">
         <div class="col-sm-3"></div>
         <div class="col-sm-6" id="tecnologias">
             <img class="img-ml" src="./images/circuito4.png" alt="">
@@ -390,7 +565,7 @@
 
     <!--entre sessões-->
 
-    <div class="row">
+    <div class="row bg-black">
         <div class="col-sm-3"></div>
         <div class="col-sm-6" id="contato">
             <img class="img-ml" src="./images/circuito5.png" alt="">
@@ -432,24 +607,8 @@
                 
         </p>
     </footer>
-<!--
-    <script type="text/javascript">
-        window.onload = navMark();
-        function navMark() {
-        // this will get the full URL at the address bar
-        var url = window.location.href;
-        var tag = document.getElementsByClassName("nav-link");
-        console.log(url);
-        console.log(tag.href);
-            // checks if its the same on the address bar
-            if (url == (tag.href)) {
-                tag.addClass("active-page");
-                //for making parent of submenu active
-               //$(this).closest("li").parent().parent().addClass("active");
-            }
-        }   
+    <script src="./js/main.js">
     </script>
--->
 </body>
 
 </html>
