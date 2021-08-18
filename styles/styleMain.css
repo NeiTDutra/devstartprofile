@@ -8,6 +8,9 @@ html {
 #p-carousel {
     font-family: 'Courier', 'monospace' ;
 }
+.f-title-proj {
+    font-size: 1.3rem;
+}
 #sobre-min {
     font-family: 'Comic Sans MS', 'Comic Sans', 'cursive';
 }

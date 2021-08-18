@@ -147,7 +147,7 @@
     <section id="p-carousel">
         <class class="container text-center my-3">
             <p class="text-center m-0 p-0">
-                <strong class="text-center titulo m-0 p-0">
+                <strong class="text-center titulo m-0 p-0 f-title-proj">
                     Projetos
                 </strong>
                 Todos projetos são pessoais, nenhum usado em produção ou profissionalmente.
@@ -157,8 +157,15 @@
                 acessar e testar.
             </p>
             <div class="row mx-auto my-auto w-75">
-                <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-                    <div class="carousel-inner w-100 pb-3 pt-1" role="listbox">
+                <div id="recipeCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#recipeCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#recipeCarousel" data-slide-to="1"></li>
+                        <li data-target="#recipeCarousel" data-slide-to="2"></li>
+                        <li data-target="#recipeCarousel" data-slide-to="3"></li>
+                        <li data-target="#recipeCarousel" data-slide-to="4"></li>
+                      </ol>
+                    <div class="carousel-inner w-100 pb-3" role="listbox">
                         <div class="carousel-item active">
                             <div class="col-md-4">
                                 <div class="card text-white shadow-card h70">
