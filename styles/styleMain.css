@@ -96,6 +96,10 @@ html {
     opacity: 0.9 !important;
 }
 
+.hr-wht {
+    border-color: whitesmoke;
+}
+
 .link-black {
     color: black;
 }
