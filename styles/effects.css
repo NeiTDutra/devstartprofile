@@ -1,0 +1,51 @@
+@keyframes opacity-zero-to-one {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.opct-z-t-o {
+    animation-name: opacity-zero-to-one;
+    animation-duration: 5S;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+}
+
+@keyframes left-to-rigth {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.l-t.r {
+    animation-name: left-to-rigth;
+    animation-duration: 5S;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+}
+
+@keyframes rigth-to-left {
+    0% {
+        transform: translateX(+50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.r-t-l {
+    animation-name: right-to-left;
+    animation-duration: 5S;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+}
