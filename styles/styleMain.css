@@ -67,6 +67,15 @@ html {
 .pngcontato {
     width: 3%;
 }
+
+#tec a {
+    text-decoration: none;
+    color: gray;
+}
+#tec a:hover {
+    color: black;
+}
+
 .teclist {
     list-style-type: none;
     margin-left: 4vw;
