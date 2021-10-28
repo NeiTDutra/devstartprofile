@@ -6,6 +6,7 @@ html {
 }
 #p-carousel {
     font-family: 'Courier', 'monospace' ;
+    margin-bottom: 5vh;
 }
 .f-title-proj {
     font-size: 1.3rem;
@@ -54,6 +55,10 @@ html {
 .top4 {
     padding-top: 60px;
 }
+.top4 img {
+    width: 48vw;
+    margin-left: 3vw;
+}
 .pngcontato {
     width: 50px;
 }
@@ -63,7 +68,10 @@ html {
     color: gray;
 }
 #tec a:hover {
-    color: black;
+    color: blue;
+}
+.tec-gradient {
+    background: radial-gradient( aliceblue 60%, grey);
 }
 
 .teclist {
