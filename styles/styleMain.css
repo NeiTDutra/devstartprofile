@@ -10,7 +10,7 @@ html {
 .f-title-proj {
     font-size: 1.3rem;
 }
-#sobre-min {
+#sobre-mim {
     font-family: 'Comic Sans MS', 'Comic Sans', 'cursive';
 }
 .capa {
@@ -49,12 +49,13 @@ html {
 .fixed-nav {
     position: fixed;
     z-index: 100;
+    width: 100vw;
 }
 .top4 {
-    padding-top: 4%;
+    padding-top: 60px;
 }
 .pngcontato {
-    width: 3%;
+    width: 50px;
 }
 
 #tec a {

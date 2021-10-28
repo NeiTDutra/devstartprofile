@@ -20,19 +20,21 @@ $('.carousel .carousel-item').each(function(){
       }
 });
 
-let doc = document.documentElement
-let title = document.getElementById('title-sobre-mim')
-let p1 = document.getElementById('p1-sobre-mim')
-let p2 = document.getElementById('p2-sobre-mim')
-let p3 = document.getElementById('p3-sobre-mim')
-let p4 = document.getElementById('p4-sobre-mim')
-let div = document.getElementById('div-sobre-mim')
+const doc = document.documentElement
+const sobreMim = document.getElementById('sobre-mim')
+const title = document.getElementById('title-sobre-mim')
+const p1 = document.getElementById('p1-sobre-mim')
+const p2 = document.getElementById('p2-sobre-mim')
+const p3 = document.getElementById('p3-sobre-mim')
+const p4 = document.getElementById('p4-sobre-mim')
 
 window.addEventListener('scroll', function() {
-    let value = parseInt(100 * doc.scrollTop / (doc.scrollHeight - doc.clientHeight))
-    if (value < 45 || value > 55) {
 
-      // div.style.display = 'none'
+    const valueWindow = window.pageYOffset + (window.innerHeight / 2)
+    const valueSobreMimTop = sobreMim.offsetTop
+
+    if (valueWindow < valueSobreMimTop) {
+
       title.classList.remove('opct-z-t-o')
       title.classList.add('opct-reverse')
       setTimeout(function() {
@@ -63,9 +65,8 @@ window.addEventListener('scroll', function() {
         p4.style.opacity = 0
       }, 2500)
     }
-    else if (value > 45 && value < 55) {
+    else {
 
-      // div.style.display = 'block'
       title.classList.remove('opct-reverse')
       title.classList.add('opct-z-t-o')
       setTimeout(function() {
