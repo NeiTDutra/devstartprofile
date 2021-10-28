@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nei Thomassin Dutra Portfolio</title>
     <meta name="author" content="Nei Thomassin Dutra">
-    <meta name="description" content="Formado em análise e desenvolvimento de sistemas em 2021 pela Universidade
-    Cruzeiro do Sul, e desbravador de novas tecnologias">
-    <meta name="keywords" content="Nei, portfolio, projetos, tecnologias, html, php, javascript, nodejs, mongodb, mysql">
+    <meta name="description" content="Graduado em tecnologia de análise e desenvolvimento de sistemas. Desenvolvedor 
+    full-stack. Linguagens de programação e frameworks (c++, c#, java, javascript, php, python etc). Banco de dados relacional e 
+    não relacional (mysql, sql, postgresql, sqlite, mongodb etc). Linguagens de marcação, estilização e frameworks (html, 
+    css, markdown, bootstrap etc). DevOp's. ">
+    <meta name="keywords" content="Nei, portfolio, projetos, tecnologias, html, php, javascript, nodejs, mongodb, mysql, css, 
+    devop's, deploy, versionamento, frameworks">
     <meta name="copyright" content="2021 Nei Thomassin Dutra - N Serviços">
     <meta name="robots" content="index, follow">
     <meta name="generator" content="VS Code">
@@ -51,8 +54,8 @@
 
     <!--barra superior-->
 
-    <header class="fixed-nav opacity-5">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header class="fixed-nav opacity-5 w-100">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <a class="navbar-brand" href="#home">Nei Thomassin Dutra</a>
             <button class="navbar-toggler"
                 type="button"
@@ -95,8 +98,8 @@
 
     <!--entre sessões-->
 
-    <div class="separate top4 bg-black" id="home">
-        <img src="./images/circuito1.png" alt="">
+    <div class="top4 bg-black w-100" id="home">
+        <img class="w-50" src="./images/circuito1.png" alt="">
     </div>
 
     <!--capa do site-->
@@ -104,7 +107,7 @@
     <section class="jumbotron text-center bg-pr mt-0 mb-0 h75">
         <div class="container text-light">
             <img class="capa" src="./images/capa0.png" alt="Minha foto" id="">
-            <p class="lead mt-3">Analista e desenvolvedor de sistemas | Desenvolvedor freelance | Tecnologias web</p>
+            <p class="lead mt-3">Graduação Em Tecnologia De Análise E Desenvolvimento De Sistemas | Full Stack | Tecnologias Web</p>
             <p>
                 <a href="#contato" class="btn btn-outline-light my-2">Contato</a>
             </p>
@@ -136,10 +139,10 @@
 
     <!--entre sessões-->
 
-    <div class="row bg-black">
+    <div class="row bg-black m-0 p-0">
         <div class="col-sm-3"></div>
         <div class="col-sm-6" id="projetos">
-            <img class="img-ml" src="./images/circuito2.png" alt="">
+            <img class="w-100" src="./images/circuito2.png" alt="">
         </div>
         <div class="col-sm-3"></div>
     </div>
@@ -169,7 +172,7 @@
                         <li data-target="#recipeCarousel" data-slide-to="5"></li>
                       </ol>
                     <div class="carousel-inner w-100 pb-3" role="listbox">
-                        <div class="carousel-item active">
+                        <div class="carousel-item">
                             <div class="col-md-4">
                                 <div class="card text-white shadow-card h70">
                                     <h5 class="card-title bg-dark text-center pt-2">Gerenciador de orçamentos</h5>
@@ -255,14 +258,16 @@
                         </div>
                         <div class="carousel-item">
                             <div class="col-md-4">
-                                <div class="card text-white shadow-card h70">
-                                    <h5 class="card-title bg-dark text-center pt-2">Gerenciador de orçamentos, clientes e estoque</h5>
+                                <div class="card text-white shadow-card h70 opacity-3">
+                                    <h5 class="card-title bg-dark text-center pt-2"><s>Gerenciador de orçamentos, clientes e estoque</s></h5>
                                     <a href="https://orcamentosfree.000webhostapp.com/index.php" target="_blank">
                                         <img class="card-img-top p-2" src="./images/pjcelo.png" alt="Card image cap">
                                     </a>
                                     <div class="card-body bg-dark">
                                         <p class="card-text">
-                                            Sistema gerenciador de orçamentos para serviços e produtos, clientes e controle de estoque.
+                                            <s>
+                                                Sistema gerenciador de orçamentos para serviços e produtos, clientes e controle de estoque.
+                                            </s>
                                         </p>
                                         <p class="card-text">
                                             [ PHP, MySQL, HTML, CSS, Dompdf, PHPMailer ]
@@ -310,7 +315,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item active">
                             <div class="col-md-4">
                                 <div class="card text-white shadow-card h70">
                                     <h5 class="card-title bg-dark text-center pt-2">Site de busca de restaurantes</h5>
@@ -356,10 +361,10 @@
 
     <!--entre sessões-->
 
-    <div class="row bg-black">
+    <div class="row bg-black m-0 p-0">
         <div class="col-sm-3"></div>
         <div class="col-sm-6" id="sobremim">
-            <img class="img-ml" src="./images/circuito3.png" alt="">
+            <img class="w-100" class="img-ml" src="./images/circuito3.png" alt="">
         </div>
         <div class="col-sm-3"></div>
     </div>
@@ -373,34 +378,33 @@
             </h2>
             <p class="lead" id="p1-sobre-mim">
                 Graduado em tecnologia de análise e desenvolvimento de sistemas em 2020/2. 
-                Atualmente cursando MBA em Segurança da informação.
+                Certificado em diversas trilhas de estudo de tecnologias, com mais de 11 anos de preparação.
             </p>
             <p class="" id="p2-sobre-mim">
                 Entusiasta em novas tecnologias no geral mas, principalmente
                 com tendências apontadas para web. Autodidata descentralizado pelos caminhos das documentações
-                de linguagens de programação e frameworks, bem como pelas diversas tendências que
-                envolvem as "stacks" da web.
+                de linguagens de programação, frameworks e pelas diversas tendências que
+                envolvem implementações full-stack.
             </p>
             <p class="lead" id="p3-sobre-mim">
-                Com vários certificados de cursos livres e através das documentações das diversas
+                Com vários certificados de cursos livres e, através das documentações das diversas
                 tecnologias, venho me preparando ao longo do tempo dedicado em projetos pessoais, 
-                na resolução de problemas para aproveitar das oportunidades
-                profissionais, para desenvolver sempre mais e melhor.
+                criando soluções para resolução de problemas, para desenvolver sempre mais e melhor.
             </p>
             <p class="" id="p4-sobre-mim">
-                Afora, dou valor a estar com a família e curtir a descontração de pescar
+                Afora, dou valor a estar com a família e pescar
                 com os amigos, pedalar por alguma trilha, viajar e conhecer outros lugares,
-                tomar um banho de mar, voltar para tomar um café e... codificar.
+                tomar um banho de mar, voltar para tomar um café e... <strong>desenvolver soluções</strong>.
             </p>
         </div>
     </section>
 
     <!--entre sessões-->
 
-    <div class="row bg-black">
+    <div class="row bg-black m-0 p-0">
         <div class="col-sm-3"></div>
         <div class="col-sm-6" id="tecnologias">
-            <img class="img-ml" src="./images/circuito4.png" alt="">
+            <img class="w-100" src="./images/circuito4.png" alt="">
         </div>
         <div class="col-sm-3"></div>
     </div>
@@ -522,10 +526,10 @@
 
     <!--entre sessões-->
 
-    <div class="row bg-black">
+    <div class="row bg-black m-0 p-0">
         <div class="col-sm-3"></div>
         <div class="col-sm-6" id="contato">
-            <img class="img-ml" src="./images/circuito5.png" alt="">
+            <img class="w-100" src="./images/circuito5.png" alt="">
         </div>
         <div class="col-sm-3"></div>
     </div>
@@ -540,6 +544,13 @@
                     target="_blank">
                     <img class="pngcontato" src="./images/mail.png" alt="email">
                     <h4 class="text-center text-white">nei.thomass@gmail.com</h4>
+                </a>
+                <br>
+                <a href="https://www.linkedin.com/in/neithomassindutra/" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <img class="pngcontato" src="./images/linkedin.png" alt="linkedin">
+                    <h4 class="text-center text-white">https://www.linkedin.com/in/neithomassindutra/</h4>
                 </a>
                 <br>
                 <hr class="hr-wht">

@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 .bg-black {
     background-color: black;
@@ -23,15 +22,6 @@ html {
 } 
 .bg-sec {
     background-color: #ADD8E6 !important;
-}
-.separate {
-    width: 100%;
-}
-.separate img {
-    width: 50%;
-}
-.img-ml {
-    width: 100%;
 }
 .titulo {
     text-decoration: underline;
@@ -58,8 +48,7 @@ html {
 }
 .fixed-nav {
     position: fixed;
-    width: 100%;
-    z-index: 1000;
+    z-index: 100;
 }
 .top4 {
     padding-top: 4%;
@@ -115,24 +104,4 @@ html {
 
 .shadow-card {
     box-shadow: 8px 10px 15px #4f6bb99a;
-}
-
-.rotate {
-    transform: rotatex(20deg);
-}
-
-#foto {
-    animation-name: vision;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-}
-
-@keyframes vision {
-    0% {
-        transform: rotatez(0deg) scale(0.1);
-    }
-    100% {
-        transform: rotatez(1080deg) scale(1);
-    }
 }
