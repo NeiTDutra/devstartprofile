@@ -27,11 +27,22 @@ const p1 = document.getElementById('p1-sobre-mim')
 const p2 = document.getElementById('p2-sobre-mim')
 const p3 = document.getElementById('p3-sobre-mim')
 const p4 = document.getElementById('p4-sobre-mim')
+const p5 = document.getElementById('p5-sobre-mim')
+const capa = document.getElementById('capa')
+const linkPf = document.getElementById('linkPf')
 
 window.addEventListener('scroll', function() {
 
-    const valueWindow = window.pageYOffset + (window.innerHeight / 2)
+    const valueCapaTop = capa.offsetTop
+    const valueWindowPf = window.scrollY
+    const valueWindow = window.scrollY + (window.innerHeight / 2)
     const valueSobreMimTop = sobreMim.offsetTop
+
+    if (valueWindowPf > valueCapaTop) {
+      linkPf.classList.remove('d-none')
+    } else {
+      linkPf.classList.add('d-none')
+    }
 
     if (valueWindow < valueSobreMimTop) {
 
@@ -64,6 +75,12 @@ window.addEventListener('scroll', function() {
       setTimeout(function() {
         p4.style.opacity = 0
       }, 2500)
+
+      p5.classList.remove('r-t-l')
+      p5.classList.add('r-t-l-reverse')
+      setTimeout(function() {
+        p5.style.opacity = 0
+      }, 2500)
     }
     else {
 
@@ -95,6 +112,12 @@ window.addEventListener('scroll', function() {
       p4.classList.add('l-t-r')
       setTimeout(function() {
         p4.style.opacity = 1
+      }, 2500)
+
+      p5.classList.remove('r-t-l-reverse')
+      p5.classList.add('r-t-l')
+      setTimeout(function() {
+        p5.style.opacity = 1
       }, 2500)
     }
 })

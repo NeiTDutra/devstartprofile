@@ -11,9 +11,6 @@ html {
 .f-title-proj {
     font-size: 1.3rem;
 }
-#sobre-mim {
-    font-family: 'Comic Sans MS', 'Comic Sans', 'cursive';
-}
 .capa {
     border-radius: 50%;
     width: 25%;
@@ -107,8 +104,16 @@ html {
     border-color: whitesmoke;
 }
 
+.link-white {
+    color: white;
+}
+
 .link-black {
-    color: black;
+    color: black !important;
+}
+
+.d-none {
+    display: none;
 }
 
 .shadow-card {
