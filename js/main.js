@@ -1,26 +1,4 @@
-$('#recipeCarousel').carousel({
-    interval: 6000
-  });
-  
-$('.carousel .carousel-item').each(function(){
-    var minPerSlide = 3;
-    var next = $(this).next();
-    if (!next.length) {
-    next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-    
-    for (var i=0;i<minPerSlide;i++) {
-        next=next.next();
-        if (!next.length) {
-            next = $(this).siblings(':first');
-          }
-        
-        next.children(':first-child').clone().appendTo($(this));
-      }
-});
 
-const doc = document.documentElement
 const sobreMim = document.getElementById('sobre-mim')
 const title = document.getElementById('title-sobre-mim')
 const p1 = document.getElementById('p1-sobre-mim')
@@ -33,17 +11,18 @@ const linkPf = document.getElementById('linkPf')
 
 window.addEventListener('scroll', function() {
 
-    const valueCapaTop = capa.offsetTop
-    const valueWindowPf = window.scrollY
-    const valueWindow = window.scrollY + (window.innerHeight / 2)
-    const valueSobreMimTop = sobreMim.offsetTop
+  const valueCapaTop = capa ? capa.offsetTop : 0;
+  const valueWindowPf = window.scrollY;
+  const valueWindow = window.scrollY + (window.innerHeight / 2);
+  const valueSobreMimTop = sobreMim ? sobreMim.offsetTop : 0;
 
+  if (linkPf) {
     if (valueWindowPf > valueCapaTop) {
-      linkPf.classList.remove('d-none')
+        linkPf.classList.remove('d-none');
     } else {
-      linkPf.classList.add('d-none')
+        linkPf.classList.add('d-none');
     }
-
+  }
     if (valueWindow < valueSobreMimTop) {
 
       title.classList.remove('opct-z-t-o')
